@@ -7,14 +7,14 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" >
     <div>
         <asp:TextBox ID="UserInputTextBox" runat="server" autofocus="true" Height="120px" Width="450px" TextMode="MultiLine" ToolTip="Mata in din text" ViewStateMode="Disabled"></asp:TextBox>
     </div>  
         <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="CompareValidator"
-            ControlToValidate="UserInputTextBox" Operator="DataTypeCheck"></asp:CompareValidator>      
+            ControlToValidate="UserInputTextBox" Operator="DataTypeCheck" EnableViewState="False"></asp:CompareValidator>      
         <p>
-        <asp:Button ID="SendButton" runat="server" Text="Bestäm antalet versaler" OnClick="Button1_Click" ViewStateMode="Disabled" EnableViewState="False" />
+        <asp:Button ID="SendButton" runat="server" Text="Bestäm antalet versaler" OnClick="Button1_Click" ViewStateMode="Disabled"  />
         </p>
         <asp:PlaceHolder ID="OutputPlaceHolder" runat="server" Visible="false">
             <p>              
