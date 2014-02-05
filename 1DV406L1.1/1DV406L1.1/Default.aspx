@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="_1DV406L1._1.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="_1DV406L1._1.Default" ViewStateMode="Disabled" %>
 
 <!DOCTYPE html>
 
@@ -9,12 +9,12 @@
 <body>
     <form id="form1" runat="server" >
     <div>
-        <asp:TextBox ID="UserInputTextBox" runat="server" autofocus="true" Height="120px" Width="450px" TextMode="MultiLine" ToolTip="Mata in din text" ViewStateMode="Disabled"></asp:TextBox>
+        <asp:TextBox ID="UserInputTextBox" runat="server" autofocus="true" Height="120px" Width="450px" TextMode="MultiLine" ToolTip="Mata in din text" ViewStateMode="Enabled"></asp:TextBox>
     </div>  
         <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="CompareValidator"
-            ControlToValidate="UserInputTextBox" Operator="DataTypeCheck" EnableViewState="False"></asp:CompareValidator>      
+            ControlToValidate="UserInputTextBox" Operator="DataTypeCheck" ViewStateMode="Disabled"></asp:CompareValidator>      
         <p>
-        <asp:Button ID="SendButton" runat="server" Text="Bestäm antalet versaler" OnClick="Button1_Click" ViewStateMode="Disabled"  />
+        <asp:Button ID="SendButton" runat="server" Text="Bestäm antalet versaler" OnClick="Button1_Click" ViewStateMode="Enabled"  />
         </p>
         <asp:PlaceHolder ID="OutputPlaceHolder" runat="server" Visible="false">
             <p>              
